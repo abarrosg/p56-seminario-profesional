@@ -8,7 +8,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 
 - Lunes, 21/09/2020: [Comando de GIT](https://cedia.zoom.us/rec/share/TG5AwDqNU05TccO-IwZTYzBcvZPtfA48tDmR9Kp1ZwiQgEAblaXhmJIaVkeNYV6F.3bBDJbdpe0o9rsri)
-- Martes, 22/09/2020:[GIT & GitHub](https://www.youtube.com/watch?v=HNBR3OmeyZw)
+- Martes, 22/09/2020: [GIT & GitHub](https://www.youtube.com/watch?v=HNBR3OmeyZw)
 ```markdown
 Syntax highlighted code block
 
