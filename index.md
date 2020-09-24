@@ -6,7 +6,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### Seccion de Clases
 
-- Lunes, 21/09/2020: [Comando de GIT] (https://www.youtube.com/watch?v=HNBR3OmeyZw)
+- Lunes, 21/09/2020: [Comando de GIT](https://www.youtube.com/watch?v=HNBR3OmeyZw)
 
 ```markdown
 Syntax highlighted code block
