@@ -20,10 +20,12 @@ console.log(`Al inicial del año ${persona.nombre} pesa ${persona.peso}.`)
 
 while(persona.peso > META){
     if (comeMucho()){
+        console.log('Aumenta el peso.')
         aumentraPeso( persona )
     }
 
     if (realizaDeporte()){
+        console.log('Disminuye el peso.')
         disminuyePeso( persona )
     }
 }
