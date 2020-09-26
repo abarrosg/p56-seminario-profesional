@@ -1,0 +1,22 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "javascript intro",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abarrosg/p56-seminario-profesional.git"
+  },
+  "author": "antony barros",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/abarrosg/p56-seminario-profesional/issues"
+  },
+  "homepage": "https://github.com/abarrosg/p56-seminario-profesional#readme"
+}
