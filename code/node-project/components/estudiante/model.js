@@ -2,6 +2,10 @@ const mongoose = require('mongoose')
 const schema = mongoose.Schema
 
 const mySchema = new schema({
+    cedula: {
+        type: String,
+        required: true,
+    },
     nombre: {
         type: String,
         required: true,
@@ -10,12 +14,8 @@ const mySchema = new schema({
         type: String,
         required: true,
     },
-    correo_electronico: {
-        type: String,
-        required: true,
-    },
     
 })
 
-const model = mongoose.model( 'Docente', mySchema )
+const model = mongoose.model( 'Estudiante', mySchema )
 module.exports = model

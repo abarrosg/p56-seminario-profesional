@@ -7,7 +7,7 @@ function addCarrera( objeto ){
 
 async function getCarreras( filtroCarrera ){
     let filtro = {}
-    if (filtroCarrera){
+    if (filtroCarrera != null ){
         filtro = { nombre : filtroCarrera }
     }
     const carreraList = await model.find( filtro )

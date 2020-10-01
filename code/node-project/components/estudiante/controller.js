@@ -1,46 +1,46 @@
 const storage = require('./storage')
 
-function addDocente(nombre, apellido, correo_electronico) {
+function addEstudiante(cedula, nombre, apellido) {
     return new Promise((resolve, reject) => {
-        let docente = {
+        let estudiante = {
+            cedula: cedula,
             nombre: nombre,
             apellido: apellido,
-            correo_electronico: correo_electronico,
         }
-        storage.add( docente )
-        resolve( docente )
+        storage.add( estudiante )
+        resolve( estudiante )
     })
 }
 
-function getDocentes( filtroDocente ) {
+function getEstudiantes( filtroDocente ) {
     return new Promise( (resolve, reject) => {
         resolve( storage.get( filtroDocente ) )
     } )
 }
 
-function updateDocente(idDocente, nombre, apellido, correo_electronico) {
+function updateEstudiante(idEstudiante, cedula,nombre, apellido) {
     return new Promise( async (resolve, reject) => {
-        let docente = {
+        let estudiante = {
+            cedula: cedula,
             nombre: nombre,
             apellido: apellido,
-            correo_electronico: correo_electronico,
         }
-        const result = await storage.update(idDocente, docente)
+        const result = await storage.update(idEstudiante, estudiante)
         resolve( result )
     })
 }
 
-function deleteDocente(idDocente) {
+function deleteEstudiante(idEstudiante) {
     return new Promise((resolve, reject) => {
-        storage.delete( idDocente )
+        storage.delete( idEstudiante )
             .then(() => { resolve() })
             .catch((error) => { reject( error ) })
     })
 }
 
 module.exports = {
-    addDocente,
-    getDocentes,
-    updateDocente,
-    deleteDocente,
+    addEstudiante,
+    getEstudiantes,
+    updateEstudiante,
+    deleteEstudiante,
 }
