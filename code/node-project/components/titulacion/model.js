@@ -17,18 +17,21 @@ const mySchema = new schema({
         ref: 'Docente',
         required: true,
     },
-    estudiantes: {
+    estudiantes: [{
         type: schema.ObjectId,
         ref: 'Estudiante',
         required: true,
-    },
+    }],
     tipo_titulacion: {
         type: String,
         required: true,
     },
     archivo: String,
     fecha_archivo: Date,
-    estado: String,
+    estado: {
+        type: String,
+        required: true,
+    },
 })
 
 const model = mongoose.model( 'Titulacion', mySchema )
